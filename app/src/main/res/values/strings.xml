@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CookBook</string>
     <string name="recipeName">Recipe Name</string>
+    <string name="ingredients">Ingredients</string>
 </resources>
