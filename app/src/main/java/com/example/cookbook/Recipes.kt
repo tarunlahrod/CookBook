@@ -1,19 +1,19 @@
 package com.example.cookbook
 
-class Recipes {
-    private var RecipeName: String? = null
-    private var RecipeIngredients: String? = null
-    private var RecipeMethodTitle: String? = null
-    private var Recipe: String? = null
-    private var Thumbnail: Int? = null
+class Recipes(recipeName: String?, recipeIngredients: String?, recipeMethodTitle: String?, recipe: String?, thumbnail: Int?) {
+    private var RecipeName: String? = recipeName
+    private var RecipeIngredients: String? = recipeIngredients
+    private var RecipeMethodTitle: String? = recipeMethodTitle
+    private var Recipe: String? = recipe
+    private var Thumbnail: Int? = thumbnail
 
-    public fun Recipes(recipeName: String?, recipeIngredients: String?, recipeMethodTitle: String?, recipe: String?, thumbnail: Int?) {
-        RecipeName = recipeName
-        RecipeIngredients = recipeIngredients
-        RecipeMethodTitle = recipeMethodTitle
-        Recipe = recipe
-        Thumbnail = thumbnail
-    }
+//    public fun Recipes (recipeName: String?, recipeIngredients: String?, recipeMethodTitle: String?, recipe: String?, thumbnail: Int?) {
+//        RecipeName = recipeName
+//        RecipeIngredients = recipeIngredients
+//        RecipeMethodTitle = recipeMethodTitle
+//        Recipe = recipe
+//        Thumbnail = thumbnail
+//    }
 
     public fun getRecipeName(): String? {
         return this.RecipeName

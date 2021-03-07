@@ -10,15 +10,15 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyHolder>() {
+class RecyclerViewAdapter(mContext: Context?, mData: List<Recipes>?): RecyclerView.Adapter<RecyclerViewAdapter.MyHolder>() {
 
-    private var mContext: Context? = null
-    private var mData:List<Recipes>? = null
+    private var mContext: Context? = mContext
+    private var mData:List<Recipes>? = mData
 
-    public fun RecyclerViewAdapter(mContext: Context?, mData: List<Recipes>?) {
-        this.mContext = mContext
-        this.mData = mData
-    }
+//    public fun RecyclerViewAdapter(mContext: Context?, mData: List<Recipes>?) {
+//        this.mContext = mContext
+//        this.mData = mData
+//    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
         var view: View? = null
